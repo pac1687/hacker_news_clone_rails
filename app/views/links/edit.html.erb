@@ -1,0 +1,12 @@
+<div class="page-header">
+  <h2>Edit Link</h2>
+</div>
+
+<form action="/links/<%= @link.id %>" method="post">
+  <%= render('form')%>
+</form>
+
+<%= link_to "- Delete", link_path(@link),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"},
+                         :class => "btn btn-danger btn-xs" %>
