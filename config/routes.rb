@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'contacts#index'
+  root :to => 'links#index'
   resources :links
   resources :votes
   resources :comments
